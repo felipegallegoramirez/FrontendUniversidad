@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  contacto = {
+    nombres: '',
+    apellidos: '',
+    correo: '',
+    celular: '',
+    comentarios: '',
+    mensajeTexto: false
+  };
 
+  enviarContacto() {
+    console.log('Contacto enviado:', this.contacto);
+  }
 }

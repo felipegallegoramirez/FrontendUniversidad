@@ -1,1 +1,43 @@
-<p>contact works!</p>
+<div class="container">
+    <h4>Contactenos</h4>
+  
+    <form (ngSubmit)="enviarContacto()" #contactoForm="ngForm">
+  
+      <div class="input-field">
+        <input type="text" id="nombres" name="nombres" [(ngModel)]="contacto.nombres" required>
+        <label for="nombres">Nombres</label>
+      </div>
+  
+      <div class="input-field">
+        <input type="text" id="apellidos" name="apellidos" [(ngModel)]="contacto.apellidos" required>
+        <label for="apellidos">Apellidos</label>
+      </div>
+  
+      <div class="input-field">
+        <input type="email" id="correo" name="correo" [(ngModel)]="contacto.correo" required>
+        <label for="correo">Correo Electrónico</label>
+      </div>
+  
+      <div class="input-field">
+        <input type="tel" id="celular" name="celular" [(ngModel)]="contacto.celular" required>
+        <label for="celular">Celular</label>
+      </div>
+  
+      <div class="input-field">
+        <textarea id="comentarios" name="comentarios" class="materialize-textarea" [(ngModel)]="contacto.comentarios"></textarea>
+        <label for="comentarios">Comentarios</label>
+      </div>
+  
+      <p>
+        <label>
+          <input type="checkbox" name="mensajeTexto" [(ngModel)]="contacto.mensajeTexto" />
+          <span>Contactarme por mensaje de texto</span>
+        </label>
+      </p>
+  
+      <button type="submit" class="btn blue" [disabled]="!contactoForm.form.valid">
+        <i class="material-icons left">send</i>Enviar
+      </button>
+  
+    </form>
+  </div>

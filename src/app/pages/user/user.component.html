@@ -1,1 +1,87 @@
-<p>user works!</p>
+<div class="content">
+    <div class="content-header">
+        <h3>Usuarios</h3>
+        <button  (click)="openModal()" class="btn waves-effect waves-light" type="submit" name="action">Agregar
+        </button>
+    </div>
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>Id</th>
+              <th>Correo</th>
+              <th>Cedula</th>
+              <th>Acciones</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+          <tr>
+            <td>#111</td>
+            <td>felipegmail.com</td>
+            <td>111</td>
+            <td><i class="material-icons">edit</i><i class="material-icons">delete</i></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div id="modal1" class="modal">
+    <h4>Registrar Usuario</h4>
+
+    <form (ngSubmit)="registrarServicio()" #servicioForm="ngForm">
+  
+      <div class="input-field">
+        <input type="text" id="cliente" name="cliente" [(ngModel)]="servicio.nombre" required>
+        <label for="cliente">Nombre</label>
+      </div>
+
+      <div class="input-field">
+        <input type="text" id="cedula" name="cedula" [(ngModel)]="servicio.cedula" required>
+        <label for="cedula">Cedula</label>
+      </div>
+  
+      <div class="input-field">
+        <input type="email" id="telefono" name="telefono" [(ngModel)]="servicio.correo" required>
+        <label for="telefono">Correo</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="direccion" name="direccion" [(ngModel)]="servicio.contrasena" required>
+        <label for="direccion">Contraseña</label>
+      </div>
+  
+      <button type="submit" class="btn green" [disabled]="!servicioForm.form.valid">
+        <i class="material-icons left">save</i>Registrar
+      </button>
+  
+    </form>
+  </div>

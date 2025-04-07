@@ -1,0 +1,21 @@
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    margin: 20px 70px;
+    min-height: calc(100vh - 200px);
+}
+
+i{
+    cursor: pointer;
+}
+
+table *{
+    text-align: center;
+}
+
+.modal{
+    padding: 30px;
+}
