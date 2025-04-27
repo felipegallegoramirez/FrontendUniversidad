@@ -10,6 +10,7 @@ import { RecoverComponent } from './pages/recover/recover.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { UserComponent } from './pages/user/user.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UserComponent } from './pages/user/user.component';
     RecoverComponent,
     ContactComponent,
     ServiceComponent,
-    UserComponent
+    UserComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,

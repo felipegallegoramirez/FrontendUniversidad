@@ -1,0 +1,58 @@
+.nosotros-section {
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    
+  
+      h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+      }
+    
+  
+    .descripcion,
+    .mision,
+    .vision {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  
+      h3 {
+        font-size: 2rem;
+        color: #2980b9;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #34495e;
+      }
+    }
+  
+    /* Hacer que todo se vea bien en dispositivos móviles */
+    @media (max-width: 768px) {
+      .nosotros-section {
+        padding: 20px;
+      }
+  
+      .header h2 {
+        font-size: 2rem;
+      }
+  
+      .descripcion p,
+      .mision p,
+      .vision p {
+        font-size: 1rem;
+      }
+    }
+  }
+  

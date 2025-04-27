@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RecoverComponent } from './pages/recover/recover.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { UserComponent } from './pages/user/user.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'recover', component: RecoverComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'user', component: UserComponent },
+  { path: 'nosotros', component: NosotrosComponent },
   { path: '**', redirectTo: 'landing' }
 ];
 
